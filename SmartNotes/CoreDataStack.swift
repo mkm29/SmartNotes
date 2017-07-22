@@ -63,4 +63,53 @@ class CoreDataStack: NSObject {
     }
     
     
+    private func retrieve<T: NSManagedObject>(entity: T.Type,withPredicate predicate: NSPredicate?) -> [T]? {
+        var results: [T]?
+        
+        if let fetchRequest: NSFetchRequest<T> = T.fetchRequest() as? NSFetchRequest<T> {
+            if predicate != nil { fetchRequest.predicate = predicate }
+
+            do {
+                results = try self.context.fetch(fetchRequest)
+            } catch  {
+                assert(false, error.localizedDescription)
+            }
+        } else {
+            assert(false,"Error: cast to NSFetchRequest<T> failed")
+        }
+        
+        return results
+    }
+    
+    
+    func retrieveUser(withEmail email: String) -> User? {
+        // create the Predicate
+        let userPredicate = NSPredicate(format: "email = %@", email)
+        
+        if let users = self.retrieve(entity: User.self, withPredicate: userPredicate) {
+            return users.first
+        }
+        return nil
+    }
+    
+    
+    func createUser(fromDictionary userDict: [String:Any]) -> User? {
+        guard let email = userDict["email"] as? String else {
+            return nil
+        }
+        
+        
+        let newUser = User(context: self.context)
+        newUser.email = email
+        
+        
+        newUser.firstName = userDict["firstName"] as? String
+        newUser.lastName = userDict["lastName"] as? String
+        newUser.pictureURL = userDict["pictureURL"] as? String
+        
+        return newUser
+    }
+    
+    
+    
 }

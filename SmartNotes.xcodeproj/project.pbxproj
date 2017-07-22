@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AF431C961F23E4F600790828 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF431C951F23E4F600790828 /* Coordinator.swift */; };
+		AF431C981F23E7C800790828 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF431C971F23E7C800790828 /* Extensions.swift */; };
 		AF6914891F23A89A002ECC50 /* Auth0.plist in Resources */ = {isa = PBXBuildFile; fileRef = AF6914881F23A89A002ECC50 /* Auth0.plist */; };
 		AF69148B1F23AA2D002ECC50 /* AlertController+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF69148A1F23AA2D002ECC50 /* AlertController+Convenience.swift */; };
 		AF69148F1F23AA50002ECC50 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF69148C1F23AA50002ECC50 /* HomeViewController.swift */; };
@@ -27,6 +29,8 @@
 /* Begin PBXFileReference section */
 		47DB21EA7B9823359A173353 /* Pods-SmartNotes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartNotes.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SmartNotes/Pods-SmartNotes.debug.xcconfig"; sourceTree = "<group>"; };
 		A9BCF879F03F9A6D4D3B3C29 /* Pods_SmartNotes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmartNotes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF431C951F23E4F600790828 /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		AF431C971F23E7C800790828 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		AF6914881F23A89A002ECC50 /* Auth0.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Auth0.plist; sourceTree = "<group>"; };
 		AF69148A1F23AA2D002ECC50 /* AlertController+Convenience.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AlertController+Convenience.swift"; sourceTree = "<group>"; };
 		AF69148C1F23AA50002ECC50 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -111,6 +115,7 @@
 				AF69148D1F23AA50002ECC50 /* ProfileViewController.swift */,
 				AF69148E1F23AA50002ECC50 /* UserIdentitiesViewController.swift */,
 				AF6914941F23B4EF002ECC50 /* NotesViewController.swift */,
+				AF431C971F23E7C800790828 /* Extensions.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -142,6 +147,7 @@
 				AFADC0F91F23A2AD00B56236 /* SmartNotes.xcdatamodeld */,
 				AFDD46D31F23A79A00D66187 /* CoreDataStack.swift */,
 				AF6914861F23A81D002ECC50 /* Client */,
+				AF431C951F23E4F600790828 /* Coordinator.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -294,6 +300,8 @@
 				AFADC0FB1F23A2AD00B56236 /* SmartNotes.xcdatamodeld in Sources */,
 				AFADC0F31F23A2AD00B56236 /* AppDelegate.swift in Sources */,
 				AFDD46D61F23A7E600D66187 /* SessionManager.swift in Sources */,
+				AF431C961F23E4F600790828 /* Coordinator.swift in Sources */,
+				AF431C981F23E7C800790828 /* Extensions.swift in Sources */,
 				AF6914951F23B4EF002ECC50 /* NotesViewController.swift in Sources */,
 				AF69148F1F23AA50002ECC50 /* HomeViewController.swift in Sources */,
 				AF6914901F23AA50002ECC50 /* ProfileViewController.swift in Sources */,

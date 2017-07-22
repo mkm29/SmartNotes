@@ -42,6 +42,7 @@ class AuthSessionManager {
     }
     var profile: UserInfo?
     
+    
     private init () { }
     
     func storeTokens(_ accessToken: String, idToken: String) {
@@ -93,6 +94,7 @@ class AuthSessionManager {
     
     func logout() {
         self.keychain.clearAll()
+        self.profile = nil
     }
     
 }
