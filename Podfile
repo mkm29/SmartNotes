@@ -11,5 +11,5 @@ target 'SmartNotes' do
   pod 'GoogleMaps'
   pod 'GooglePlaces'
   pod 'GooglePlacePicker'
-
+  pod 'SimpleKeychain'
 end

@@ -7,26 +7,42 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AF6914891F23A89A002ECC50 /* Auth0.plist in Resources */ = {isa = PBXBuildFile; fileRef = AF6914881F23A89A002ECC50 /* Auth0.plist */; };
+		AF69148B1F23AA2D002ECC50 /* AlertController+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF69148A1F23AA2D002ECC50 /* AlertController+Convenience.swift */; };
+		AF69148F1F23AA50002ECC50 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF69148C1F23AA50002ECC50 /* HomeViewController.swift */; };
+		AF6914901F23AA50002ECC50 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF69148D1F23AA50002ECC50 /* ProfileViewController.swift */; };
+		AF6914911F23AA50002ECC50 /* UserIdentitiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF69148E1F23AA50002ECC50 /* UserIdentitiesViewController.swift */; };
+		AF6914931F23AA57002ECC50 /* UserIdentityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6914921F23AA57002ECC50 /* UserIdentityCell.swift */; };
+		AF6914951F23B4EF002ECC50 /* NotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6914941F23B4EF002ECC50 /* NotesViewController.swift */; };
 		AFADC0F31F23A2AD00B56236 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFADC0F21F23A2AD00B56236 /* AppDelegate.swift */; };
-		AFADC0F51F23A2AD00B56236 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFADC0F41F23A2AD00B56236 /* ViewController.swift */; };
 		AFADC0F81F23A2AD00B56236 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFADC0F61F23A2AD00B56236 /* Main.storyboard */; };
 		AFADC0FB1F23A2AD00B56236 /* SmartNotes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AFADC0F91F23A2AD00B56236 /* SmartNotes.xcdatamodeld */; };
 		AFADC0FD1F23A2AD00B56236 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFADC0FC1F23A2AD00B56236 /* Assets.xcassets */; };
 		AFADC1001F23A2AD00B56236 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFADC0FE1F23A2AD00B56236 /* LaunchScreen.storyboard */; };
+		AFDD46D41F23A79A00D66187 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDD46D31F23A79A00D66187 /* CoreDataStack.swift */; };
+		AFDD46D61F23A7E600D66187 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDD46D51F23A7E600D66187 /* SessionManager.swift */; };
 		CA38D7819D6C055CC397CBC2 /* Pods_SmartNotes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9BCF879F03F9A6D4D3B3C29 /* Pods_SmartNotes.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		47DB21EA7B9823359A173353 /* Pods-SmartNotes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartNotes.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SmartNotes/Pods-SmartNotes.debug.xcconfig"; sourceTree = "<group>"; };
 		A9BCF879F03F9A6D4D3B3C29 /* Pods_SmartNotes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmartNotes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF6914881F23A89A002ECC50 /* Auth0.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Auth0.plist; sourceTree = "<group>"; };
+		AF69148A1F23AA2D002ECC50 /* AlertController+Convenience.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AlertController+Convenience.swift"; sourceTree = "<group>"; };
+		AF69148C1F23AA50002ECC50 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		AF69148D1F23AA50002ECC50 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		AF69148E1F23AA50002ECC50 /* UserIdentitiesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserIdentitiesViewController.swift; sourceTree = "<group>"; };
+		AF6914921F23AA57002ECC50 /* UserIdentityCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserIdentityCell.swift; sourceTree = "<group>"; };
+		AF6914941F23B4EF002ECC50 /* NotesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotesViewController.swift; sourceTree = "<group>"; };
 		AFADC0EF1F23A2AD00B56236 /* SmartNotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartNotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFADC0F21F23A2AD00B56236 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AFADC0F41F23A2AD00B56236 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AFADC0F71F23A2AD00B56236 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AFADC0FA1F23A2AD00B56236 /* SmartNotes.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SmartNotes.xcdatamodel; sourceTree = "<group>"; };
 		AFADC0FC1F23A2AD00B56236 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AFADC0FF1F23A2AD00B56236 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AFADC1011F23A2AD00B56236 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AFDD46D31F23A79A00D66187 /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		AFDD46D51F23A7E600D66187 /* SessionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
 		C34F2C00988A742D33945324 /* Pods-SmartNotes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartNotes.release.xcconfig"; path = "Pods/Target Support Files/Pods-SmartNotes/Pods-SmartNotes.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -42,6 +58,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AF6914861F23A81D002ECC50 /* Client */ = {
+			isa = PBXGroup;
+			children = (
+				AF6914871F23A82A002ECC50 /* Auth */,
+			);
+			name = Client;
+			sourceTree = "<group>";
+		};
+		AF6914871F23A82A002ECC50 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				AFDD46D51F23A7E600D66187 /* SessionManager.swift */,
+			);
+			name = Auth;
+			sourceTree = "<group>";
+		};
 		AFADC0E61F23A2AD00B56236 = {
 			isa = PBXGroup;
 			children = (
@@ -63,15 +95,55 @@
 		AFADC0F11F23A2AD00B56236 /* SmartNotes */ = {
 			isa = PBXGroup;
 			children = (
-				AFADC0F21F23A2AD00B56236 /* AppDelegate.swift */,
-				AFADC0F41F23A2AD00B56236 /* ViewController.swift */,
-				AFADC0F61F23A2AD00B56236 /* Main.storyboard */,
-				AFADC0FC1F23A2AD00B56236 /* Assets.xcassets */,
-				AFADC0FE1F23A2AD00B56236 /* LaunchScreen.storyboard */,
-				AFADC1011F23A2AD00B56236 /* Info.plist */,
-				AFADC0F91F23A2AD00B56236 /* SmartNotes.xcdatamodeld */,
+				AFDD46CF1F23A75D00D66187 /* Controller */,
+				AFDD46D21F23A78600D66187 /* Model */,
+				AFDD46D11F23A77600D66187 /* Supporting Files */,
+				AFDD46D01F23A76D00D66187 /* View */,
 			);
 			path = SmartNotes;
+			sourceTree = "<group>";
+		};
+		AFDD46CF1F23A75D00D66187 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				AF69148A1F23AA2D002ECC50 /* AlertController+Convenience.swift */,
+				AF69148C1F23AA50002ECC50 /* HomeViewController.swift */,
+				AF69148D1F23AA50002ECC50 /* ProfileViewController.swift */,
+				AF69148E1F23AA50002ECC50 /* UserIdentitiesViewController.swift */,
+				AF6914941F23B4EF002ECC50 /* NotesViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		AFDD46D01F23A76D00D66187 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AF6914921F23AA57002ECC50 /* UserIdentityCell.swift */,
+				AFADC0F61F23A2AD00B56236 /* Main.storyboard */,
+				AFADC0FE1F23A2AD00B56236 /* LaunchScreen.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		AFDD46D11F23A77600D66187 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AFADC0F21F23A2AD00B56236 /* AppDelegate.swift */,
+				AF6914881F23A89A002ECC50 /* Auth0.plist */,
+				AFADC0FC1F23A2AD00B56236 /* Assets.xcassets */,
+				AFADC1011F23A2AD00B56236 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AFDD46D21F23A78600D66187 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AFADC0F91F23A2AD00B56236 /* SmartNotes.xcdatamodeld */,
+				AFDD46D31F23A79A00D66187 /* CoreDataStack.swift */,
+				AF6914861F23A81D002ECC50 /* Client */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 		C4838B7DF2D9E9750E1C32DE /* Frameworks */ = {
@@ -157,6 +229,7 @@
 				AFADC1001F23A2AD00B56236 /* LaunchScreen.storyboard in Resources */,
 				AFADC0FD1F23A2AD00B56236 /* Assets.xcassets in Resources */,
 				AFADC0F81F23A2AD00B56236 /* Main.storyboard in Resources */,
+				AF6914891F23A89A002ECC50 /* Auth0.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -215,9 +288,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AFADC0F51F23A2AD00B56236 /* ViewController.swift in Sources */,
+				AF6914931F23AA57002ECC50 /* UserIdentityCell.swift in Sources */,
+				AF69148B1F23AA2D002ECC50 /* AlertController+Convenience.swift in Sources */,
+				AF6914911F23AA50002ECC50 /* UserIdentitiesViewController.swift in Sources */,
 				AFADC0FB1F23A2AD00B56236 /* SmartNotes.xcdatamodeld in Sources */,
 				AFADC0F31F23A2AD00B56236 /* AppDelegate.swift in Sources */,
+				AFDD46D61F23A7E600D66187 /* SessionManager.swift in Sources */,
+				AF6914951F23B4EF002ECC50 /* NotesViewController.swift in Sources */,
+				AF69148F1F23AA50002ECC50 /* HomeViewController.swift in Sources */,
+				AF6914901F23AA50002ECC50 /* ProfileViewController.swift in Sources */,
+				AFDD46D41F23A79A00D66187 /* CoreDataStack.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -383,6 +463,7 @@
 				AFADC1061F23A2AD00B56236 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
