@@ -12,4 +12,5 @@ target 'SmartNotes' do
   pod 'GooglePlaces'
   pod 'GooglePlacePicker'
   pod 'SimpleKeychain'
+  pod 'JVFloatLabeledTextField'
 end

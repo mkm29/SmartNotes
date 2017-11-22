@@ -25,11 +25,18 @@ import UIKit
 import Auth0
 
 class HomeViewController: UIViewController {
+    
+    var coordinator: Coordinator? = nil
 
     // MARK: - Lifecycle
 
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        self.coordinator = Coordinator()
     }
 
     // MARK: - IBAction
@@ -60,6 +67,7 @@ class HomeViewController: UIViewController {
                                 return self.showLogin()
                             }
                             // should have Profile now
+                            print(AuthSessionManager.shared.profile?.email)
                             Auth0
                                 .users(token: idToken)
                                 .get(AuthSessionManager.shared.profile!.sub, fields: ["user_metadata"], include: true)

@@ -40,14 +40,39 @@ class AuthSessionManager {
     var idToken: String? {
         return self.keychain.string(forKey: "id_token")
     }
+    
+    var accessToken: String? {
+        return self.keychain.string(forKey: "access_token")
+    }
+    
     var profile: UserInfo?
     
     
-    private init () { }
+    private init () {
+        print("AuthSessionManager init()")
+        print((UIApplication.shared.delegate as! AppDelegate).getLibraryDirectory())
+    }
     
     func storeTokens(_ accessToken: String, idToken: String) {
         self.keychain.setString(accessToken, forKey: "access_token")
         self.keychain.setString(idToken, forKey: "id_token")
+    }
+    
+    func loginSilently(_ completion: @escaping (_ profile: UserInfo?,_ error: Error?) -> Void) {
+        if self.accessToken != nil {
+            // have accessToken, now get the Profile associated with this token
+            self.getProfile({ (profile, error) in
+                if error == nil {
+                    DispatchQueue.main.async {
+                        completion(profile, nil)
+                    }
+                } else {
+                    completion(nil, error)
+                }
+            })
+        } else {
+            completion(nil, AuthSessionManagerError.noAccessToken)
+        }
     }
     
     func retrieveProfile(_ callback: @escaping (Error?) -> ()) {
@@ -65,6 +90,25 @@ class AuthSessionManager {
                     callback(error)
                 }
         }
+    }
+    
+    func getProfile(_ completion: @escaping (_ profile: UserInfo?,_ error: Error?) -> Void) {
+        guard let accessToken = self.accessToken else {
+            return completion(nil, AuthSessionManagerError.noAccessToken)
+        }
+        
+        
+        Auth0.authentication()
+            .userInfo(withAccessToken: accessToken)
+            .start { result in
+                switch(result) {
+                case .success(let profile):
+                    completion(profile, nil)
+                case .failure(let error):
+                    completion(nil, error)
+                }
+        }
+        
     }
     
     

@@ -12,6 +12,9 @@ import CoreData
 class CoreDataStack: NSObject {
     
     
+    static let shared = CoreDataStack()
+    
+    
     // MARK: - Core Data stack
     
     var context: NSManagedObjectContext {
